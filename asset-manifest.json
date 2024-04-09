@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/posergenerator/static/css/main.4fc6f353.css",
-    "main.js": "/posergenerator/static/js/main.ee833260.js",
+    "main.js": "/posergenerator/static/js/main.22f30e00.js",
     "index.html": "/posergenerator/index.html",
     "main.4fc6f353.css.map": "/posergenerator/static/css/main.4fc6f353.css.map",
-    "main.ee833260.js.map": "/posergenerator/static/js/main.ee833260.js.map"
+    "main.22f30e00.js.map": "/posergenerator/static/js/main.22f30e00.js.map"
   },
   "entrypoints": [
     "static/css/main.4fc6f353.css",
-    "static/js/main.ee833260.js"
+    "static/js/main.22f30e00.js"
   ]
 }
