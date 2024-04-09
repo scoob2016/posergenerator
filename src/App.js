@@ -186,7 +186,7 @@ function App() {
               value={portraitScale}
               onChange={handleInputChange}
             />
-            <span className="info"> (scale of the pokemon icon)</span>
+            <span className="info"> (scale of the pokemon icon in party)</span>
           </div>
         </div>
         <div className="input-group">
@@ -241,7 +241,7 @@ function App() {
               value={profileScale}
               onChange={handleInputChange}
             />
-            <span className="info"> (how large the model appears)</span>
+            <span className="info"> (how large the model appears in pc)</span>
           </div>
         </div>
         <div className="input-group">
@@ -284,7 +284,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{ marginBottom: '20px' }}></div> {/* Empty div for spacing */}
       <button onClick={handleDownload}>Download</button>
     </div>
   );
