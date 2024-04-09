@@ -284,6 +284,7 @@ function App() {
           </div>
         </div>
       </div>
+      <div style={{ marginBottom: '20px' }}></div>
       <button onClick={handleDownload}>Download</button>
     </div>
   );
