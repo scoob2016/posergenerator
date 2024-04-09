@@ -8,7 +8,7 @@ function generateSpeciesFiles(data) {
     profileScale: data.profileScale,
     profileTranslation: [data.profileTranslationX, data.profileTranslationY, data.profileTranslationZ],
     faint: "bedrock(" + data.species + ", faint)",
-    cry:  "bedrock(" + data.species + ", cry)",
+    cry:  "bedrock(" + data.originalSpecies + ", cry)",
     poses: {
       "battle-idle": {
         poseName: "battle-idle",
@@ -69,6 +69,7 @@ function generateSpeciesFiles(data) {
 
 function App() {
   const [species, setSpecies] = useState('');
+  const [originalSpecies, setOriginalSpecies] = useState('');
   const [portraitScale, setPortraitScale] = useState(1.0);
   const [portraitTranslationX, setPortraitTranslationX] = useState(0.0);
   const [portraitTranslationY, setPortraitTranslationY] = useState(0.0);
@@ -83,6 +84,9 @@ function App() {
     switch (name) {
       case "species":
         setSpecies(value);
+        break;
+      case "originalSpecies":
+        setOriginalSpecies(value);
         break;
       case "portraitScale":
         setPortraitScale(parseFloat(value));
@@ -116,6 +120,7 @@ function App() {
   const handleDownload = () => {
     const data = {
       species,
+      originalSpecies,
       portraitScale,
       portraitTranslationX,
       portraitTranslationY,
@@ -145,11 +150,20 @@ function App() {
       <div className="section">
         <h2>Species</h2>
         <div className="input-group">
-          <label>Species:</label>
+          <label>Aspect Species ID:</label>
           <input
             type="text"
             name="species"
             value={species}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="input-group">
+          <label>Original Species:</label>
+          <input
+            type="text"
+            name="originalSpecies"
+            value={originalSpecies}
             onChange={handleInputChange}
           />
         </div>
