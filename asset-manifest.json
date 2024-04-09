@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/posergenerator/static/css/main.4fc6f353.css",
+    "main.js": "/posergenerator/static/js/main.ee833260.js",
+    "index.html": "/posergenerator/index.html",
+    "main.4fc6f353.css.map": "/posergenerator/static/css/main.4fc6f353.css.map",
+    "main.ee833260.js.map": "/posergenerator/static/js/main.ee833260.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fc6f353.css",
+    "static/js/main.ee833260.js"
+  ]
+}
