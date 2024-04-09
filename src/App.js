@@ -151,107 +151,137 @@ function App() {
         <h2>Species</h2>
         <div className="input-group">
           <label>Aspect Species ID:</label>
-          <input
-            type="text"
-            name="species"
-            value={species}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="text"
+              name="species"
+              value={species}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (such as decidueyetot)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Original Species:</label>
-          <input
-            type="text"
-            name="originalSpecies"
-            value={originalSpecies}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="text"
+              name="originalSpecies"
+              value={originalSpecies}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (such as decidueye)</span>
+          </div>
         </div>
       </div>
       <div className="section">
         <h2>Portrait</h2>
         <div className="input-group">
           <label>Portrait Scale:</label>
-          <input
-            type="number"
-            name="portraitScale"
-            step="0.01"
-            value={portraitScale}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="portraitScale"
+              step="0.01"
+              value={portraitScale}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (scale of the pokemon icon)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Portrait Translation X:</label>
-          <input
-            type="number"
-            name="portraitTranslationX"
-            step="0.01"
-            value={portraitTranslationX}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="portraitTranslationX"
+              step="0.01"
+              value={portraitTranslationX}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (how far left/right)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Portrait Translation Y:</label>
-          <input
-            type="number"
-            name="portraitTranslationY"
-            step="0.01"
-            value={portraitTranslationY}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="portraitTranslationY"
+              step="0.01"
+              value={portraitTranslationY}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (how far up/down)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Portrait Translation Z:</label>
-          <input
-            type="number"
-            name="portraitTranslationZ"
-            step="0.01"
-            value={portraitTranslationZ}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="portraitTranslationZ"
+              step="0.01"
+              value={portraitTranslationZ}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (how far backwards/forwards)</span>
+          </div>
         </div>
       </div>
       <div className="section">
         <h2>Profile</h2>
         <div className="input-group">
           <label>Profile Scale:</label>
-          <input
-            type="number"
-            name="profileScale"
-            step="0.01"
-            value={profileScale}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="profileScale"
+              step="0.01"
+              value={profileScale}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (how large the model appears)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Profile Translation X:</label>
-          <input
-            type="number"
-            name="profileTranslationX"
-            step="0.01"
-            value={profileTranslationX}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="profileTranslationX"
+              step="0.01"
+              value={profileTranslationX}
+              onChange={handleInputChange}
+            />
+            <span className="info"> (how much shifted left/right)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Profile Translation Y:</label>
-          <input
-            type="number"
-            name="profileTranslationY"
-            step="0.01"
-            value={profileTranslationY}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="profileTranslationY"
+              step="0.01"
+              value={profileTranslationY}
+              onChange={handleInputChange}
+            />
+            <span className="info">(how much shifted up/down)</span>
+          </div>
         </div>
         <div className="input-group">
           <label>Profile Translation Z:</label>
-          <input
-            type="number"
-            name="profileTranslationZ"
-            step="0.01"
-            value={profileTranslationZ}
-            onChange={handleInputChange}
-          />
+          <div className="input-container">
+            <input
+              type="number"
+              name="profileTranslationZ"
+              step="0.01"
+              value={profileTranslationZ}
+              onChange={handleInputChange}
+            />
+            <span className="info">(how much shifted back/forth)</span>
+          </div>
         </div>
       </div>
       <div style={{ marginBottom: '20px' }}></div> {/* Empty div for spacing */}
@@ -259,6 +289,8 @@ function App() {
     </div>
   );
 }
+
+
 
 
 export default App;
