@@ -137,7 +137,7 @@ function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'species.json';
+    a.download = data.species + '.json';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
